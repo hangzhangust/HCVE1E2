@@ -52,7 +52,7 @@ hold on ;
 
 plot(x,y,'--','Color',blue)
 
-
+legend('\langle S_{naive} \rangle','fit line')
 FIG.Units = 'centimeters';
 set(gca,'Position',[.15 .2 .8 .77]);  %调整 XLABLE和YLABLE不会被切掉
 % set(gca,'Position',[.1 .13 .2 .83]);  %调整 XLABLE和YLABLE不会被切掉

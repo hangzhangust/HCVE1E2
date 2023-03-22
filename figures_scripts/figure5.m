@@ -51,8 +51,8 @@ set(gcf,'renderer','Painters')
 hold on
 set(0,'DefaultAxesFontName','Arial')
 set(0,'DefaultTextFontName','Arial')
-set(0,'DefaultAxesFontSize',8)
-set(0,'DefaultTextFontSize',8)
+set(0,'DefaultAxesFontSize',4)
+set(0,'DefaultTextFontSize',4)
 size_marker=10;
 dots = mean_escape_time_E1E2(escape_mutations-191) ;
 nbins =55;
@@ -90,7 +90,7 @@ figure_boxplot(data,G,...
     savefig,savefig_name,fig_width_cm,fig_height_cm);
 
 xtick =set(gca,'XTick',1:2,'XTickLabel',...
-    {'Escape','Remaining'},'FontName','Arial');
+    {'Escape','Remaining'},'FontName','Arial','FontSize',6);
 
 set(gca,'YTick',50:150:600)
 yt = get(gca, 'YTick');
@@ -128,7 +128,7 @@ box off
 % set(gca,'Position',[.3 .2 .6 .78]);  %调整 XLABLE和YLABLE不会被切掉
 
 % set(gca,'Position',[.27 .2 .7 .75]);  %调整 XLABLE和YLABLE不会被切掉
-set(gcf,'Position',[6.53 6.53 4.5 6]);
+set(gcf,'Position',[6.53 6.53 3.5 6]);
 box off
 % text(150,60,sprintf('r = %.2f',r),'FontSize',8)
 % xlabel({'Escape time of the joint model'})
@@ -221,7 +221,7 @@ figure_boxplot(data,G,...
     savefig,savefig_name,fig_width_cm,fig_height_cm);
 
 xtick =set(gca,'XTick',1:2,'XTickLabel',...
-    {'JM','E2-only'},'FontName','Arial');
+    {'JM','E2-only'},'FontName','Arial','FontSize',6);
 
 set(gca,'YTick',50:50:200)
 yt = get(gca, 'YTick');
@@ -251,7 +251,7 @@ FIG.Name = 'Escape_compare';
 ylabel({'Escape time'})
 
 FIG.Units = 'centimeters';
-set(gcf,'Position',[6.53 6.53 4.5 6]);
+set(gcf,'Position',[6.53 6.53 3.5 6]);
 box off
 % text(150,60,sprintf('r = %.2f',r),'FontSize',8)
 % xlabel({'Escape time of the joint model'})
@@ -292,7 +292,7 @@ outlier_marker_edgeWidth = 0.001;
 outlier_marker_edgeColor = 'w';
 outlier_jitter_value = 0;
 label_xaxis_data = {'JM',sprintf('E2-only')};
-text_ylabel = 'Escape time';
+text_ylabel = '';
 text_xlabel = '';
 text_title = '';%'E2-escape mutations [Keck2009],[Morin2012],[Bailey2015]';
 label_orientation_choice = 'horizontal'; %'horizontal'
@@ -347,7 +347,7 @@ figure_boxplot(data,G,...
     savefig,savefig_name,fig_width_cm,fig_height_cm);
 
 xtick =set(gca,'XTick',1:2,'XTickLabel',...
-    {'JM','E2-only'},'FontName','Arial','FontSize',8);
+    {'JM','E2-only'},'FontName','Arial','FontSize',6);
 
 set(gca,'YTick',50:150:600)
 yt = get(gca, 'YTick');
@@ -368,14 +368,14 @@ P = ranksum(mean_escape_time_E1E2(remaining_sites+192),mean_escape_time(remainin
 
 
 % text(1.1,max(yt)*1.1,'$$ P = 1.3 \times 10^{-18} $$','interpreter','latex','FontSize',12)
-text(1.7,-50,'model','FontName','Arial','FontSize',8)
+text(1.8,-20,'model','FontName','Arial','FontSize',6)
 
 
 FIG.Name = 'remain_compare';
-ylabel({'Escape time'})
+% ylabel({'Escape time'})
 
 FIG.Units = 'centimeters';
-set(gcf,'Position',[6.53 6.53 4.5 6]);
+set(gcf,'Position',[6.53 6.53 3.5 6]);
 box off
 % text(150,60,sprintf('r = %.2f',r),'FontSize',8)
 % xlabel({'Escape time of the joint model'})

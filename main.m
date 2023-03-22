@@ -116,10 +116,18 @@ clear;
 clc;
 run suppfigure6.m
 
-%% Supp. Fig. 7 Binary classifier designed to determine the optimal cut-off for 
+%% Supp. Fig. 7 Correlation between infectivity measurements and 
+% predictions obtained from a site-independent model.
+
+clear;
+clc;
+run suppfigure7.m
+
+
+%% Supp. Fig. 8 Binary classifier designed to determine the optimal cut-off for 
 % escape time based on experimentally or clinically identified escape mutations.
 
 
 clear;
 clc;
-run suppfigure7.m
+run suppfigure8.m
