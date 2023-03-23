@@ -81,47 +81,48 @@ run figure6.m
 clear;
 clc;
 run suppfigure1.m
-
-%% Supp. Fig. 2 E2-only model inferred in our previous study reproduces 
-% statistics of the MSA based on the latest E2 sequence data.
-
-clear;
-clc;
-run suppfigure2.m
-
-%% Supp. Fig. 3 Comparison of the fitness prediction of the E2-only model 
-% inferred in this work (left panel) and in our previous study (right panel).
-
-clear;
-clc;
-run suppfigure3.m
-
-%% Supp. Fig. 4 Estimate of the true entropy S_true
-
-
-clear;
-clc;
-run suppfigure4.m
-%% Supp. Fig. 5 Entropy calculated from different models for the E1E2 protein.
-
-clear;
-clc;
-run suppfigure5.m
-
-%% Supp. Fig. 6 Robustness of the fraction of compensatory 
+%% Supp. Fig. 2 Robustness of the fraction of compensatory 
 % E1E2 inter-protein interactions (Fig. 4) in the
 % number of top inter-protein couplings selected
 
 clear;
 clc;
-run suppfigure6.m
+run suppfigure2.m
 
-%% Supp. Fig. 7 Correlation between infectivity measurements and 
+%% Supp. Fig. 3 Correlation between infectivity measurements and 
 % predictions obtained from a site-independent model.
 
 clear;
 clc;
+run suppfigure3.m
+
+%% Supp. Fig. 4 E2-only model inferred in our previous study reproduces 
+% statistics of the MSA based on the latest E2 sequence data.
+
+clear;
+clc;
+run suppfigure4.m
+
+%% Supp. Fig. 5 Comparison of the fitness prediction of the E2-only model 
+% inferred in this work (left panel) and in our previous study (right panel).
+
+clear;
+clc;
+run suppfigure5.m
+
+%% Supp. Fig. 6 Estimate of the true entropy S_true
+
+
+clear;
+clc;
+run suppfigure6.m
+%% Supp. Fig. 7 Entropy calculated from different models for the E1E2 protein.
+
+clear;
+clc;
 run suppfigure7.m
+
+
 
 
 %% Supp. Fig. 8 Binary classifier designed to determine the optimal cut-off for 
